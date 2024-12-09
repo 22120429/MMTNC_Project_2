@@ -15,7 +15,7 @@ pipeline
         {
             steps 
             {
-                withDockerRegistry(credentialsId: 'DockerHub', url: 'https://index.docker.io/v1/') 
+                withDockerRegistry(credentialsId: 'dockerhub', url: 'https://index.docker.io/v1/') 
                 {
                     // Build the Docker image 
                     bat 'docker build -t 22120429/mmtnc .'
